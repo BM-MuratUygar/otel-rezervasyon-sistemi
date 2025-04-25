@@ -7,9 +7,9 @@ Microservices Mimarisi ile Geliştirilmiş Otel Rezervasyon Sistemi
 - **hotel-service**: Otel ve oda CRUD işlemleri
 - **reservation-service**: Rezervasyon işlemleri ve Kafka publisher
 - **notification-service**: Kafka consumer, rezervasyon bildirimi
+- **api-gateway**: Tüm servislere giriş noktası (opsiyonel)
 - **postgres**: Veritabanı (PostgreSQL)
 - **kafka**: Mesajlaşma servisi
-- **gateway-service**: Tüm servislere giriş noktası (opsiyonel)
 
 ## 🚀 Başlatma Adımları
 
