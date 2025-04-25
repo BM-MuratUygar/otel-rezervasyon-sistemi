@@ -48,13 +48,6 @@ reservation-service Kafka üzerinden reservation-created event gönderir.
 
 notification-service bu event’i dinler ve log/console’a bildirir.
 
-🧪 Testler
-Her servis içinde:
-
-Unit Test (Junit 5, Mockito)
-
-Integration Test (Testcontainers + SpringBootTest)
-
 🧱 Teknolojiler
 Java 17
 Spring Boot
