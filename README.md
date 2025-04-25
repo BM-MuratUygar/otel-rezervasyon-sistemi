@@ -13,24 +13,16 @@ gateway-service	Tüm servislere giriş noktası (opsiyonel)
 🚀 Başlatma Adımları
 
 1. Projeyi Klonlayın
-bash
-Kopyala
-Düzenle
 git clone https://github.com/BM-MuratUygar/otel-rezervasyon-sistemi.git
 cd otel-rezervasyon-sistemi
 
 2. Projeyi Derleyin
 Her servisin dizinine giderek:
-bash
-Kopyala
-Düzenle
-./mvnw clean package -DskipTests
+mvn clean package -DskipTests -X
 
 3. Docker Compose ile Servisleri Başlatın
-bash
-Kopyala
-Düzenle
-docker-compose up --build
+Ana dizine dönün
+docker-compose up
 
 4. Servislere Erişim
 Servis	Port
@@ -60,9 +52,6 @@ Docker & Docker Compose
 Lombok, MapStruct, etc.
 
 📂 Proje Yapısı
-bash
-Kopyala
-Düzenle
 otel-rezervasyon-sistemi/
 │
 ├── hotel-service/
@@ -70,9 +59,6 @@ otel-rezervasyon-sistemi/
 ├── notification-service/
 ├── docker-compose.yml
 └── README.md
-
-👨‍💻 Katkı Sağlamak
-Katkıda bulunmak isterseniz lütfen bir "fork" oluşturun ve PR açın ✨
 
 📬 İletişim
 Herhangi bir soru için: [bilgisayarmuhendisi@hotmail.com]
