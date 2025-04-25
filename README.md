@@ -57,6 +57,7 @@ otel-rezervasyon-sistemi/
 ├── hotel-service/
 ├── reservation-service/
 ├── notification-service/
+├── api-gateway/
 ├── docker-compose.yml
 └── README.md
 
