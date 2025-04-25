@@ -13,24 +13,16 @@ gateway-service	Tüm servislere giriş noktası (opsiyonel)
 🚀 Başlatma Adımları
 
 1. Projeyi Klonlayın
-bash
-Kopyala
-Düzenle
 git clone https://github.com/BM-MuratUygar/otel-rezervasyon-sistemi.git
 cd otel-rezervasyon-sistemi
 
 2. Projeyi Derleyin
 Her servisin dizinine giderek:
-bash
-Kopyala
-Düzenle
-./mvnw clean package -DskipTests
+mvn clean package -DskipTests -X
 
 3. Docker Compose ile Servisleri Başlatın
-bash
-Kopyala
-Düzenle
-docker-compose up --build
+Ana dizine dönün
+docker-compose up
 
 4. Servislere Erişim
 Servis	Port
@@ -48,13 +40,6 @@ reservation-service Kafka üzerinden reservation-created event gönderir.
 
 notification-service bu event’i dinler ve log/console’a bildirir.
 
-🧪 Testler
-Her servis içinde:
-
-Unit Test (Junit 5, Mockito)
-
-Integration Test (Testcontainers + SpringBootTest)
-
 🧱 Teknolojiler
 Java 17
 Spring Boot
@@ -67,9 +52,6 @@ Docker & Docker Compose
 Lombok, MapStruct, etc.
 
 📂 Proje Yapısı
-bash
-Kopyala
-Düzenle
 otel-rezervasyon-sistemi/
 │
 ├── hotel-service/
@@ -77,9 +59,6 @@ otel-rezervasyon-sistemi/
 ├── notification-service/
 ├── docker-compose.yml
 └── README.md
-
-👨‍💻 Katkı Sağlamak
-Katkıda bulunmak isterseniz lütfen bir "fork" oluşturun ve PR açın ✨
 
 📬 İletişim
 Herhangi bir soru için: [bilgisayarmuhendisi@hotmail.com]
