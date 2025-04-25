@@ -17,18 +17,22 @@ Microservices Mimarisi ile Geliştirilmiş Otel Rezervasyon Sistemi
 
     ```bash
     git clone https://github.com/BM-MuratUygar/otel-rezervasyon-sistemi.git
+    ```
+    ```bash
     cd otel-rezervasyon-sistemi
     ```
 
 2. **Projeyi Derleyin**:
 
     Her servisin kalsörü içerisinde,
+    ```bash
     mvn clean package -DskipTests -X
     ```
 
 3. **Docker Compose ile Servisleri Başlatın**:
 
-    ```Ana dizinde,
+    Ana dizinde,
+	```bash
     docker-compose up
     ```
 
@@ -63,5 +67,4 @@ JWT Authentication kullanılarak her kullanıcı sadece kendi rezervasyonların�
 - Lombok
 - MapStruct
 
-Murat Uygar
 bilgisayarmuhendisi@hotmail.com
